@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { X, Store, Phone, Mail, Lock, CheckCircle2, AlertCircle, LogIn, UserPlus, Building2, ShieldCheck, Sparkles } from 'lucide-react';
 import { UserAccount } from './AuthModal';
-import { sendAdminEmailNotification } from '../services/adminEmailService';
-
+import { sendAdminEmailNotification } from './adminEmailService';
 interface SellerAuthModalProps {
   isOpen: boolean;
   initialMode?: 'login' | 'register';
