@@ -1,7 +1,7 @@
 import React from 'react';
 import { Star, Heart, Tag, Plus, Check } from 'lucide-react';
 import { Product, BuyerType, ThemeConfig } from '../types';
-import { calculateProductPrice } from '../utils/priceUtils';
+import { calculateProductPrice } from './priceUtils';
 
 interface ProductCardProps {
   product: Product;
