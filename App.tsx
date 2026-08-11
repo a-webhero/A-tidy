@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Store, UserPlus, LogIn, Sparkles } from 'lucide-react'; // <-- আইকনগুলো যোগ করা হলো
+
 import { Header } from './Header';
 import BannerSlider, { INITIAL_BANNERS } from './BannerSlider';
 import { CategoryGrid } from './CategoryGrid';
@@ -16,7 +18,12 @@ import { LocationSelectorModal } from './LocationSelectorModal';
 import { AuthModal, UserAccount } from './AuthModal';
 import { SellerAuthModal } from './SellerAuthModal';
 import { SellerShopModal, VendorShopInfo } from './SellerShopModal';
+
+// brandLogo ডিফাইন করা হলো
+const brandLogo = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80";
+
 export default function App() {
+  //
   // App Role & Mode
   const [currentRole, setCurrentRole] = useState<UserRole>('customer');
   const [buyerType, setBuyerType] = useState<BuyerType>('retail');
