@@ -29,8 +29,7 @@ import {
 import { Product, Order, OrderStatus, ProductVariant, WholesaleTierRule } from '../types';
 import { UserAccount } from './AuthModal';
 import { VendorShopInfo } from './SellerShopModal';
-import { sendAdminEmailNotification } from '../services/adminEmailService';
-
+import { sendAdminEmailNotification } from './adminEmailService';
 interface VendorPanelProps {
   currentUser?: UserAccount | null;
   products: Product[];
