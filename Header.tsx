@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Search, ShoppingBag, Heart, SlidersHorizontal, MapPin, LogIn, UserPlus, LogOut, User, PackageCheck, ShieldAlert, Store, Sparkles } from 'lucide-react';
 import { UserAccount } from './AuthModal';
 import { UserRole, ThemeConfig, Product } from '../types';
-import brandLogo from './atidy_fashion_logo.png';
+<img src="/atidy_fashion_logo.png" alt="A-TIDY FASHION" className="h-10 w-auto" />
 
 interface HeaderProps {
   currentUser: UserAccount | null;
