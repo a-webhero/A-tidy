@@ -1,7 +1,6 @@
 import React from 'react';
 import { X, MapPin, Check, Truck } from 'lucide-react';
-import { BANGLADESH_LOCATIONS, calculateDeliveryFee } from '../data/bangladeshLocations';
-
+import { BANGLADESH_LOCATIONS, calculateDeliveryFee } from './bangladeshLocations';
 interface LocationSelectorModalProps {
   isOpen: boolean;
   onClose: () => void;
