@@ -1,0 +1,6 @@
+{
+  "name": "A-TIDY Fashion",
+  "description": "Premium Modest Fashion & Multi-Vendor E-Commerce Platform in Bangladesh featuring A-TIDY Fashion collection, live order tracking, and PDF invoicing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
