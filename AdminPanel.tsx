@@ -82,7 +82,7 @@ import {
   sendAdminEmailNotification,
   AdminEmailSettings,
   AdminEmailLog
-} from '../services/adminEmailService';
+} from './adminEmailService';
 
 export interface MediaFile {
   id: string;
