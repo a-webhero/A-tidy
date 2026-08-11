@@ -1,29 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { Header } from './Header';
-import { BannerSlider, INITIAL_BANNERS } from './components/BannerSlider';
-import { CategoryGrid } from './components/CategoryGrid';
-import { ProductCard } from './components/ProductCard';
-import { FlashDealsSection } from './components/FlashDealsSection';
-import { CustomerStorefront } from './components/CustomerStorefront';
-import { ProductDetailModal } from './components/ProductDetailModal';
-import { CartDrawer } from './components/CartDrawer';
-import { CheckoutModal } from './components/CheckoutModal';
-import { InvoiceModal } from './components/InvoiceModal';
-import { OrderTrackerModal } from './components/OrderTrackerModal';
-import { VendorPanel } from './components/VendorPanel';
-import { AdminPanel } from './components/AdminPanel';
-import { LocationSelectorModal } from './components/LocationSelectorModal';
-import { AuthModal, UserAccount } from './components/AuthModal';
-import { SellerAuthModal } from './components/SellerAuthModal';
-import { SellerShopModal, VendorShopInfo } from './components/SellerShopModal';
-import { ShopFlashCard } from './components/ShopFlashCard';
-import { INITIAL_PRODUCTS } from './data/productsData';
-import { UserRole, BuyerType, Product, CartItem, Order, OrderStatus, ProductVariant, BannerItem, ThemeConfig } from './types';
-import { DEFAULT_THEME_CONFIG } from './components/ThemeLayoutBuilder';
-import { sendAdminEmailNotification } from './services/adminEmailService';
-import { ShoppingBag, Tag, Sparkles, CheckCircle2, ShieldCheck, Truck, Package, Store, LogIn, UserPlus } from 'lucide-react';
-import brandLogo from './assets/images/atidy_fashion_logo_1785823125232.jpg';
-
+import BannerSlider, { INITIAL_BANNERS } from './BannerSlider';
+import { CategoryGrid } from './CategoryGrid';
+import { ProductCard } from './ProductCard';
+import { FlashDealsSection } from './FlashDealsSection';
+import { CustomerStorefront } from './CustomerStorefront';
+import { ProductDetailModal } from './ProductDetailModal';
+import { CartDrawer } from './CartDrawer';
+import { CheckoutModal } from './CheckoutModal';
+import { InvoiceModal } from './InvoiceModal';
+import { OrderTrackerModal } from './OrderTrackerModal';
+import { VendorPanel } from './VendorPanel';
+import { AdminPanel } from './AdminPanel';
+import { LocationSelectorModal } from './LocationSelectorModal';
+import { AuthModal, UserAccount } from './AuthModal';
+import { SellerAuthModal } from './SellerAuthModal';
+import { SellerShopModal, VendorShopInfo } from './SellerShopModal';
 export default function App() {
   // App Role & Mode
   const [currentRole, setCurrentRole] = useState<UserRole>('customer');
