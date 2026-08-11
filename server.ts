@@ -2,10 +2,9 @@ import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { createServer as createViteServer } from 'vite';
-import { BANGLADESH_LOCATIONS, calculateDeliveryFee } from './src/data/bangladeshLocations.js';
-import { INITIAL_COUPONS, INITIAL_PRODUCTS } from './src/data/productsData.js';
-import { Order, OrderStatus, Product, TrackingStep } from './src/types.js';
-
+import { BANGLADESH_LOCATIONS, calculateDeliveryFee } from './bangladeshLocations';
+import { INITIAL_COUPONS, INITIAL_PRODUCTS } from './productsData';
+import { Order, OrderStatus, Product, TrackingStep } from './types';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
