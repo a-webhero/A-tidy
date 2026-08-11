@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { X, User, Phone, Mail, Lock, CheckCircle2, AlertCircle, LogIn, UserPlus } from 'lucide-react';
-import { sendAdminEmailNotification } from '../services/adminEmailService';
-
+import { sendAdminEmailNotification } from './adminEmailService';
 export interface UserAccount {
   id?: string;
   name: string;
