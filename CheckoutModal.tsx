@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { X, MapPin, Truck, CreditCard, ShieldCheck, CheckCircle2, ArrowRight, AlertCircle, Phone, User, Home } from 'lucide-react';
-import { BANGLADESH_LOCATIONS, calculateDeliveryFee } from '../data/bangladeshLocations';
-import { CartItem, PaymentMethod, Order, BuyerType } from '../types';
+import { X, MapPin, Truck, CreditCard, ShieldCheck, CheckCircle2, ArrowRight, AlertCircle, Phone } from 'lucide-react';
+import { BANGLADESH_LOCATIONS, calculateDeliveryFee } from './bangladeshLocations';
+import { CartItem, PaymentMethod, Order, BuyerType } from './types';
 import { UserAccount } from './AuthModal';
-import { sendAdminEmailNotification } from '../services/adminEmailService';
-
+import { sendAdminEmailNotification } from './adminEmailService';
 interface CheckoutModalProps {
   isOpen: boolean;
   onClose: () => void;
