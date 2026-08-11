@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { X, Printer, CheckCircle2, ShieldCheck, MapPin, Tag, Phone, Download, Loader2 } from 'lucide-react';
 import { Order } from './types';
-import brandLogo from './atidy_fashion_logo.png';
+const brandLogo = '/atidy_fashion_logo.png';
 // @ts-ignore
 import html2pdf from 'html2pdf.js';
 
