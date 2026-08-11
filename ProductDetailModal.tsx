@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { X, Star, Heart, Share2, Tag, ShieldCheck, Check, Plus, Minus, ShoppingBag } from 'lucide-react';
-import { Product, ProductVariant, WholesaleTierRule } from '../types';
-import { calculateProductPrice } from '../utils/priceUtils';
-
+import { Product, ProductVariant, WholesaleTierRule } from './types';
+import { calculateProductPrice } from './priceUtils';
 interface ProductDetailModalProps {
   product: Product;
   onClose: () => void;
